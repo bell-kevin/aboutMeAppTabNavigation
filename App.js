@@ -1,16 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer } from '@react-navigation/native';
 import { StyleSheet, Text, View, Image } from 'react-native';
 import { AntDesign, Entypo, FontAwesome } from '@expo/vector-icons';
+import { useFonts, OpenSans_700Bold } from '@expo-google-fonts/open-sans';
 
-const skills = ['JavaScript', 'HTML', 'CSS', 'React', 'SQL', 'PHP'];
+const skills = ['JavaScript', 'HTML', 'CSS', 'React', 'SQL', 'PHP', 'React Native'];
 
 const HomeScreen = () => {
   return (
     <View style={[styles.container, { alignItems: 'center', justifyContent: 'center' }]}>
       <Text style={styles.name}>Kevin Bell</Text>
-      <Text>
+      <Text style={styles.studentInfo}>
         I am a student at Davis Technical College, studying Software
         Development. My goal is to become a full-stack developer.
       </Text>
@@ -45,11 +46,17 @@ const SchoolScreen = () => {
   );
 };
 
-
-
 const Tab = createBottomTabNavigator();
 
 const App = () => {
+  const [fontsLoaded] = useFonts({
+    'OpenSans-Bold': OpenSans_700Bold,
+  });
+
+  if (!fontsLoaded) {
+    return null;
+  }
+
   return (
     <NavigationContainer>
       <Tab.Navigator
@@ -99,7 +106,7 @@ const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#c8e6c9', // set the background color to light green
+    backgroundColor: '#c8e6c9', //light green
   },
   name: {
     fontSize: 30,
@@ -110,7 +117,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
-    backgroundColor: '#c8e6c9', // set the background color to light green
+    backgroundColor: '#c8e6c9', //light green
   },
   school: {
     fontSize: 30,
@@ -137,6 +144,10 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 200,
     marginBottom: 20,
+  },
+  studentInfo: {
+    width: '80%',
+    textAlign: 'center',
   },
 });
 
