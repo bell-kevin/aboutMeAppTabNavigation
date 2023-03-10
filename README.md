@@ -2,7 +2,7 @@
 
 In Module 1, you created the About Me web app. Here, you will create the same app for a phone. Use all the same contents -- text, list of skills, and picture and info about the school. You will use tab navigation to move from screen to screen. Add custom fonts, as you did in the project for the Course List. Here is an example -- note the tabs on the bottom, which contain icons as well as text:
 
-![tab-1.PNG](https://github.com/bell-kevin/aboutMeApp/blob/main/pics/tab-1.PNG)     ![tab-2.PNG](https://github.com/bell-kevin/aboutMeApp/blob/main/pics/tab-2.PNG)     ![tab-3.PNG](https://github.com/bell-kevin/aboutMeApp/blob/main/pics/tab-3.PNG)
+![tab-1.PNG](https://github.com/bell-kevin/aboutMeAppTabNavigation/blob/main/pics/tab-1.PNG)     ![tab-2.PNG](https://github.com/bell-kevin/aboutMeAppTabNavigation/blob/main/pics/tab-2.PNG)     ![tab-3.PNG](https://github.com/bell-kevin/aboutMeAppTabNavigation/blob/main/pics/tab-3.PNG)
 
  
 
