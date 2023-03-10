@@ -16,6 +16,16 @@ Take 3 screenshots, as shown above.
 
 Submission: Zip together the root folder and the 3 screenshots, and submit the single zipped folder.
 
+![p](https://github.com/bell-kevin/aboutMeAppTabNavigation/blob/main/screenshots/home.PNG)
+
+![p](https://github.com/bell-kevin/aboutMeAppTabNavigation/blob/main/screenshots/skills.PNG)
+
+![p](https://github.com/bell-kevin/aboutMeAppTabNavigation/blob/main/screenshots/school.PNG)
+
+![p](https://github.com/bell-kevin/aboutMeAppTabNavigation/blob/main/screenshots/homeLandscape.PNG)
+
+![p](https://github.com/bell-kevin/aboutMeAppTabNavigation/blob/main/screenshots/skillsLandscape.PNG)
+
 == We're Using GitHub Under Protest ==
 
 This project is currently hosted on GitHub.  This is not ideal; GitHub is a
