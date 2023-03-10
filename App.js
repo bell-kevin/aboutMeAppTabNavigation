@@ -24,7 +24,7 @@ const SkillsScreen = () => {
     <View style={[styles.container, { alignItems: 'center', justifyContent: 'center' }]}>
       <Text style={styles.name}>My Skills</Text>
       {skills.map((skill, index) => (
-        <Text key={index}>{skill}</Text>
+        <Text style={styles.skillsList} key={index}>{skill}</Text>
       ))}
     </View>
   );
@@ -112,33 +112,41 @@ const styles = StyleSheet.create({
     fontSize: 30,
     fontWeight: 'bold',
     marginBottom: 20,
+    fontFamily: 'OpenSans-Bold',
   },
   skills: {
     flex: 1,
     alignItems: 'center',
     justifyContent: 'center',
     backgroundColor: '#c8e6c9', //light green
+    fontFamily: 'OpenSans-Bold',
+    fontSize: 40,
   },
   school: {
     fontSize: 30,
     fontWeight: 'bold',
     marginBottom: 20,
+    fontFamily: 'OpenSans-Bold',
   },
   address: {
     fontSize: 20,
     marginBottom: 10,
+    textAlign: 'center',
+    fontFamily: 'OpenSans-Bold',
   },
   city: {
     textAlign: 'center',
     fontSize: 15,
     fontWeight: 'bold',
     marginBottom: 10,
+    fontFamily: 'OpenSans-Bold',
   },
   phone: {
     textAlign: 'center',
     fontSize: 15,
     fontWeight: 'bold',
     marginBottom: 10,
+    fontFamily: 'OpenSans-Bold',
   },
   image: {
     width: '100%',
@@ -148,8 +156,13 @@ const styles = StyleSheet.create({
   studentInfo: {
     width: '80%',
     textAlign: 'center',
+    fontSize: 20,
+    fontFamily: 'OpenSans-Bold',
+  },
+  skillsList: {
+    fontSize: 20,
+    fontFamily: 'OpenSans-Bold',
   },
 });
-
 
 export default App;
