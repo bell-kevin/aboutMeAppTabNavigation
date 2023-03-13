@@ -4,47 +4,9 @@ import { NavigationContainer } from '@react-navigation/native';
 import { StyleSheet, Text, View, Image } from 'react-native';
 import { AntDesign, Entypo, FontAwesome } from '@expo/vector-icons';
 import { useFonts, OpenSans_700Bold } from '@expo-google-fonts/open-sans';
-
-const skills = ['JavaScript', 'HTML', 'CSS', 'React', 'SQL', 'PHP', 'React Native'];
-
-const HomeScreen = () => {
-  return (
-    <View style={[styles.container, { alignItems: 'center', justifyContent: 'center' }]}>
-      <Text style={styles.name}>Kevin Bell</Text>
-      <Text style={styles.studentInfo}>
-        I am a student at Davis Technical College, studying Software
-        Development. My goal is to become a full-stack developer.
-      </Text>
-    </View>
-  );
-};
-
-const SkillsScreen = () => {
-  return (
-    <View style={[styles.container, { alignItems: 'center', justifyContent: 'center' }]}>
-      <Text style={styles.name}>My Skills</Text>
-      {skills.map((skill, index) => (
-        <Text style={styles.skillsList} key={index}>{skill}</Text>
-      ))}
-    </View>
-  );
-};
-
-const SchoolScreen = () => {
-  const dtcImage = require('./assets/dtc.jpg');
-
-  return (
-    <View style={[styles.container, { alignItems: 'center', justifyContent: 'center' }]}>
-      <Text style={styles.school}>Davis Technical College</Text>
-      <Image source={dtcImage} style={styles.image} />
-      <Text style={styles.address}>550 East 300 South</Text>
-      <Text style={styles.city}>
-        Kaysville, Utah, United States of America 84037
-      </Text>
-      <Text style={styles.phone}>801-593-2500</Text>
-    </View>
-  );
-};
+import HomeScreen from './screens/HomeScreen';
+import SkillsScreen from './screens/SkillsScreen';
+import SchoolScreen from './screens/SchoolScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -114,52 +76,9 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     fontFamily: 'OpenSans-Bold',
   },
-  skills: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-    backgroundColor: '#c8e6c9', //light green
-    fontFamily: 'OpenSans-Bold',
-    fontSize: 40,
-  },
-  school: {
-    fontSize: 30,
-    fontWeight: 'bold',
-    marginBottom: 20,
-    fontFamily: 'OpenSans-Bold',
-  },
-  address: {
-    fontSize: 20,
-    marginBottom: 10,
-    textAlign: 'center',
-    fontFamily: 'OpenSans-Bold',
-  },
-  city: {
-    textAlign: 'center',
-    fontSize: 15,
-    fontWeight: 'bold',
-    marginBottom: 10,
-    fontFamily: 'OpenSans-Bold',
-  },
-  phone: {
-    textAlign: 'center',
-    fontSize: 15,
-    fontWeight: 'bold',
-    marginBottom: 10,
-    fontFamily: 'OpenSans-Bold',
-  },
-  image: {
-    width: '100%',
-    height: 200,
-    marginBottom: 20,
-  },
   studentInfo: {
     width: '80%',
     textAlign: 'center',
-    fontSize: 20,
-    fontFamily: 'OpenSans-Bold',
-  },
-  skillsList: {
     fontSize: 20,
     fontFamily: 'OpenSans-Bold',
   },
