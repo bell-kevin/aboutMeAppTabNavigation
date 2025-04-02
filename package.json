@@ -9,7 +9,7 @@
     "web": "expo start --web"
   },
   "dependencies": {
-    "@expo-google-fonts/open-sans": "^0.2.3",
+    "@expo-google-fonts/open-sans": "^0.3.0",
     "@react-navigation/bottom-tabs": "^7.3.4",
     "expo": "~52.0.41",
     "expo-status-bar": "~2.0.1",
