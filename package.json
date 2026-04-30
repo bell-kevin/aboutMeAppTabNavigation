@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "@expo-google-fonts/open-sans": "^0.4.2",
-    "@react-navigation/bottom-tabs": "^7.15.10",
+    "@react-navigation/bottom-tabs": "^7.15.11",
     "expo": "~55.0.18",
     "expo-status-bar": "~55.0.5",
     "react": "19.2.5",
